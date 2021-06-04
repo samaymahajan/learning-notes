@@ -3,7 +3,7 @@
 
 ### Key aspects of Functional Programming
 
-* <b>First class Objects</b>
+* **First class Objects**
     * In JS, functions are first class objects.
     * So JS have concept of Higher-Order-Functions (HoF).
     * React have similar concept of Higher-Order-Components (HoC), treat components as functions and enhance it with behaviours.
@@ -79,7 +79,12 @@ class Button extends React.Component {
 } 
 ```
 ## Stateless Functional Components (SFC)
-### Props and context
+### Context
+**Context provides a way to pass data through the component tree without having to pass props down manually at every level.**
+In React apps, data is passed from parent to child (top-down) using props. In some cases (e.g. Themes, Local, Authentication, etc), this approach is cubersome and app debugging is troublesome.
+Using Context, application share data between components without having to explicily pass a prop throguh every level of the tree. Data is defined at the node of a tree and shared with child nodes.
+
+### Props 
 * Components that are not able to receive any props from the parents are not particularly useful.
 * stateless functional components can receive props as parameters.
 
@@ -97,13 +102,14 @@ Stateless functional components also receive a second parameter which represents
     <button>{context.currency}{props.value}</button> 
 ) 
 ```
-# <font color='red'>What is the purpose of context</font>
+
+
 ### Lifecycle
 * SFC do not provide any lifecycle hooks.
 * SFC only implement a render-like method
 * SFC is staeless, so ```this``` does not represent component during their execution.
 ### Event Handlers
-No component instanc, use eventhandlers with SFC as below -
+No component instance, use eventhandlers with SFC as below -
 ```js
 () => { 
   let input 
