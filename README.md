@@ -1,7 +1,12 @@
 # learning-notes
+Learning notes for React, MongoDB, NodeJs and More...
 
-Learning notes for React, MongoDB, NodeJs
+# Table of Contents
+1. [ReactJS](/React/ReactJS.md)
+2. [NodeJS]
 
+
+## Markdown Tips
 put a > for quote the para
 
 Task List
@@ -28,7 +33,3 @@ Wrap text with _ for _italics_
 :rainbow_flag:
 
 [Emoticons Cheat-Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
-
-
-# Table of Contents
-1. [ReactJS](/React/ReactJS.md)
