@@ -84,6 +84,12 @@ class Button extends React.Component {
 In React apps, data is passed from parent to child (top-down) using props. In some cases (e.g. Themes, Local, Authentication, etc), this approach is cubersome and app debugging is troublesome.
 Using Context, application share data between components without having to explicily pass a prop throguh every level of the tree. Data is defined at the node of a tree and shared with child nodes.
 
+There are three elements to Context:
+
+* **createContext** — Calling this returns a pair of components, Provider and Consumer.
+* **Provider** — a Component that allows for one or more Consumers to subscribe to changes.
+* **Consumer** —a Component subscribed to a Provider
+
 ### Props 
 * Components that are not able to receive any props from the parents are not particularly useful.
 * stateless functional components can receive props as parameters.
@@ -151,3 +157,6 @@ this.setState({
 * Miminal amount of data needed.
 * Only those values, whose change will render the component again.
 * Don't keep something in the state, if we don't use it for rendering.
+
+### References
+1. https://www.freecodecamp.org/news/how-to-protect-your-routes-with-react-context-717670c4713a/
