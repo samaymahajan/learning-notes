@@ -7,6 +7,8 @@ Learning notes for React, MongoDB, NodeJs and More...
 3. [NodeJS](/Nodejs/Nodejs.md)
 3. [MongoDB](/Mongo/Mongodb.md)
 4. [Google Cloud]
+5. [Rust](/Rust/rust.md)
+
 
 
 ## Markdown Tips
